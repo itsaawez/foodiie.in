@@ -1,0 +1,217 @@
+﻿/* FOODIIE â€” Print Stylesheet for Recipes and Articles */
+@media print {
+  @page {
+    margin: 1.6cm 1.4cm;
+    size: auto;
+  }
+
+  *, *::before, *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 11pt !important;
+    line-height: 1.45 !important;
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  /* Hide interactive, navigational, advertising, and marketing elements */
+  .site-header,
+  .site-nav,
+  .nav-toggle,
+  .mobile-drawer,
+  .drawer-overlay,
+  .site-footer,
+  .cookie-banner,
+  .recipe-action-bar,
+  .recipe-ing-actions,
+  .recipe-servings-note .servings-subtext,
+  .recipe-rating-widget,
+  .share,
+  .related,
+  .ad-slot,
+  .ad-wrap,
+  .newsletter-section,
+  .skip-link,
+  .btn,
+  button,
+  .recipe-ingredient-cb,
+  .recipe-ingredient-box {
+    display: none !important;
+  }
+
+  /* Container full width */
+  .container, .recipe-wrap, .article-wrap {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Print Header Watermark */
+  .article-header {
+    border-bottom: 2pt solid #222 !important;
+    padding-bottom: 8pt !important;
+    margin-bottom: 12pt !important;
+  }
+
+  .article-header::before {
+    content: "FOODIIE â€¢ Recipe Collection (foodiie.in)";
+    display: block;
+    font-size: 9pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #666 !important;
+    margin-bottom: 4pt;
+  }
+
+  .article-header h1 {
+    font-size: 20pt !important;
+    line-height: 1.2 !important;
+    margin: 0 0 6pt 0 !important;
+  }
+
+  /* Recipe Hero image - scale down for paper economy */
+  .recipe-hero {
+    max-height: 220px !important;
+    overflow: hidden !important;
+    margin-bottom: 12pt !important;
+  }
+
+  .recipe-hero img {
+    max-height: 220px !important;
+    object-fit: cover !important;
+    width: 100% !important;
+  }
+
+  /* Badges & Meta Grid */
+  .recipe-badges {
+    display: flex !important;
+    gap: 8pt !important;
+    margin-bottom: 8pt !important;
+  }
+
+  .recipe-badge-pill {
+    border: 1pt solid #444 !important;
+    padding: 2pt 6pt !important;
+    font-size: 9pt !important;
+    font-weight: 600 !important;
+    border-radius: 4pt !important;
+  }
+
+  .recipe-meta-cards {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 6pt !important;
+    border: 1pt solid #ccc !important;
+    padding: 8pt !important;
+    margin-bottom: 14pt !important;
+  }
+
+  .recipe-meta-card {
+    text-align: center !important;
+    border-right: 1pt solid #eee !important;
+  }
+
+  .recipe-meta-card:last-child {
+    border-right: none !important;
+  }
+
+  .recipe-meta-card dt {
+    font-size: 8pt !important;
+    text-transform: uppercase !important;
+    color: #555 !important;
+  }
+
+  .recipe-meta-card dd {
+    font-size: 11pt !important;
+    font-weight: 700 !important;
+  }
+
+  /* Ingredients 2-Column Print Layout */
+  .recipe-ingredients-list {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4pt 12pt !important;
+    list-style: square !important;
+    padding-left: 18pt !important;
+  }
+
+  .recipe-ingredient-row {
+    border-bottom: 0.5pt solid #ddd !important;
+    padding: 3pt 0 !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .recipe-ingredient-label {
+    display: block !important;
+  }
+
+  .recipe-ingredient-text {
+    font-size: 10pt !important;
+  }
+
+  /* Instructions */
+  .recipe-instructions-list {
+    list-style: none !important;
+    counter-reset: print-step !important;
+    padding: 0 !important;
+  }
+
+  .recipe-instruction-step {
+    counter-increment: print-step !important;
+    margin-bottom: 8pt !important;
+    padding-left: 24pt !important;
+    position: relative !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .recipe-instruction-step::before {
+    content: counter(print-step) "." !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    font-weight: 700 !important;
+    font-size: 11pt !important;
+  }
+
+  /* Nutrition */
+  .recipe-nutrition-card {
+    border: 1pt solid #888 !important;
+    padding: 8pt !important;
+    margin-top: 14pt !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .nutrition-body {
+    display: flex !important;
+    gap: 12pt !important;
+  }
+
+  .nutrition-bar {
+    display: none !important;
+  }
+
+  /* Source link printed at bottom */
+  article::after {
+    content: "Printed from FOODIIE Recipe Network â€” Thank you for cooking with us!";
+    display: block;
+    margin-top: 18pt;
+    padding-top: 8pt;
+    border-top: 1pt solid #aaa;
+    font-size: 8.5pt;
+    font-style: italic;
+    color: #555 !important;
+    text-align: center;
+  }
+}
+
