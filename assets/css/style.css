@@ -1,4 +1,4 @@
-/* FOODIIE — public design system. Mobile-first, vanilla CSS. */
+﻿/* FOODIIE â€” public design system. Mobile-first, vanilla CSS. */
 
 /* ============ Tokens ============ */
 :root {
@@ -921,7 +921,7 @@ body.drawer-open{overflow:hidden}
   box-shadow: var(--shadow-deep);
 }
 .fact-card::before {
-  content: "💡";
+  content: "ðŸ’¡";
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
@@ -2082,4 +2082,5 @@ body.drawer-open{overflow:hidden}
     height:22px;
   }
 }
+
 

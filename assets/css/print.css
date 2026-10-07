@@ -1,4 +1,4 @@
-/* FOODIIE — Print Stylesheet for Recipes and Articles */
+﻿/* FOODIIE â€” Print Stylesheet for Recipes and Articles */
 @media print {
   @page {
     margin: 1.6cm 1.4cm;
@@ -61,7 +61,7 @@
   }
 
   .article-header::before {
-    content: "FOODIIE • Recipe Collection (foodiie.in)";
+    content: "FOODIIE â€¢ Recipe Collection (foodiie.in)";
     display: block;
     font-size: 9pt;
     font-weight: 700;
@@ -203,7 +203,7 @@
 
   /* Source link printed at bottom */
   article::after {
-    content: "Printed from FOODIIE Recipe Network — Thank you for cooking with us!";
+    content: "Printed from FOODIIE Recipe Network â€” Thank you for cooking with us!";
     display: block;
     margin-top: 18pt;
     padding-top: 8pt;
@@ -214,3 +214,4 @@
     text-align: center;
   }
 }
+

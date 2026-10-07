@@ -1,4 +1,4 @@
-/* FOODIIE — public interactions. Vanilla JS, no frameworks. */
+﻿/* FOODIIE â€” public interactions. Vanilla JS, no frameworks. */
 (function () {
   'use strict';
 
@@ -198,9 +198,9 @@
     var img = item.image ? resolveUrl(item.image) : base + '/assets/images/placeholder.jpg';
     var badge = item.category || (item.type ? item.type.toUpperCase() : '');
     var metaDetails = [];
-    if (item.cuisine) metaDetails.push('🌍 ' + esc(item.cuisine));
-    if (item.time) metaDetails.push('⏱️ ' + esc(item.time));
-    if (item.diet) metaDetails.push('🌱 ' + esc(item.diet));
+    if (item.cuisine) metaDetails.push('ðŸŒ ' + esc(item.cuisine));
+    if (item.time) metaDetails.push('â±ï¸ ' + esc(item.time));
+    if (item.diet) metaDetails.push('ðŸŒ± ' + esc(item.diet));
 
     return '<article class="card">' +
       '<a class="card-media" href="' + esc(resolveUrl(item.url)) + '" tabindex="-1" aria-hidden="true">' +
@@ -472,7 +472,7 @@
       var isSaved = list.some(function (it) { return it.slug === slug; });
       if (isSaved) {
         btn.classList.add('is-saved');
-        if (textSpan) textSpan.textContent = 'Saved ❤️';
+        if (textSpan) textSpan.textContent = 'Saved â¤ï¸';
       }
 
       btn.addEventListener('click', function () {
@@ -485,7 +485,7 @@
         } else {
           current.push({ slug: slug, title: title, url: url });
           btn.classList.add('is-saved');
-          if (textSpan) textSpan.textContent = 'Saved ❤️';
+          if (textSpan) textSpan.textContent = 'Saved â¤ï¸';
         }
         setSaved(current);
       });
@@ -537,7 +537,7 @@
     if (userRating) {
       var n = parseInt(userRating, 10);
       highlightStars(n);
-      if (rLabel) rLabel.innerHTML = 'Your rating: <strong>' + n + '</strong>/5 ⭐';
+      if (rLabel) rLabel.innerHTML = 'Your rating: <strong>' + n + '</strong>/5 â­';
     }
 
     stars.forEach(function (star) {
@@ -551,7 +551,7 @@
         } catch (e) {}
         userRating = starVal;
         highlightStars(starVal);
-        if (rLabel) rLabel.innerHTML = 'Rated <strong>' + starVal + '</strong>/5! Thank you ❤️';
+        if (rLabel) rLabel.innerHTML = 'Rated <strong>' + starVal + '</strong>/5! Thank you â¤ï¸';
       });
     });
 
@@ -653,4 +653,5 @@
     initYouTubeEmbeds();
   }
 })();
+
 
