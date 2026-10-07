@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <filter id="chili-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#202421" flood-opacity="0.14"/>
+    </filter>
+    <linearGradient id="chili-red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3823"/>
+      <stop offset="60%" stop-color="#D61805"/>
+      <stop offset="100%" stop-color="#8A0C00"/>
+    </linearGradient>
+    <linearGradient id="chili-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#55992B"/>
+      <stop offset="100%" stop-color="#2F6113"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#chili-shadow)" transform="rotate(-15 80 80)">
+    <!-- Chili Body Curve -->
+    <path d="M42,42 C68,48 118,74 126,112 C132,136 122,148 114,146 C104,142 98,118 78,92 C58,68 38,54 42,42 Z" fill="url(#chili-red)"/>
+    <!-- Specular Highlight -->
+    <path d="M52,48 C72,56 102,80 110,108 C106,104 88,74 62,54 Z" fill="#FFA599" opacity="0.65"/>
+    <!-- Green Cap -->
+    <path d="M38,36 C44,32 50,38 48,46 C42,48 34,44 38,36 Z" fill="url(#chili-green)"/>
+    <!-- Stem -->
+    <path d="M42,35 C38,26 30,20 22,22 C20,24 26,30 32,36 Z" fill="url(#chili-green)"/>
+  </g>
+</svg>

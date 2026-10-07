@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 180" width="160" height="180">
+  <defs>
+    <filter id="avo-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#202421" flood-opacity="0.14"/>
+    </filter>
+    <linearGradient id="avo-skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A5326"/>
+      <stop offset="100%" stop-color="#233516"/>
+    </linearGradient>
+    <linearGradient id="avo-flesh" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C2E28F"/>
+      <stop offset="50%" stop-color="#E2F4B3"/>
+      <stop offset="100%" stop-color="#CBE899"/>
+    </linearGradient>
+    <linearGradient id="avo-pit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9E5F32"/>
+      <stop offset="60%" stop-color="#6F3B18"/>
+      <stop offset="100%" stop-color="#4E270E"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#avo-shadow)">
+    <!-- Skin Outer -->
+    <path d="M80,18 C115,18 138,58 142,106 C146,145 120,168 80,168 C40,168 14,145 18,106 C22,58 45,18 80,18 Z" fill="url(#avo-skin)"/>
+    <!-- Pale green flesh -->
+    <path d="M80,26 C108,26 128,62 131,104 C134,138 112,158 80,158 C48,158 26,138 29,104 C32,62 52,26 80,26 Z" fill="url(#avo-flesh)"/>
+    <!-- Soft inner yellow ring -->
+    <ellipse cx="80" cy="112" rx="38" ry="40" fill="#F4FCE3"/>
+    <!-- Brown Pit -->
+    <ellipse cx="80" cy="114" rx="27" ry="29" fill="url(#avo-pit)"/>
+    <!-- Pit Highlight -->
+    <path d="M72,96 C78,92 88,94 92,98 C88,101 78,101 72,96 Z" fill="#D98A53" opacity="0.6"/>
+  </g>
+</svg>
