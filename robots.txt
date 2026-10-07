@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Sitemap: http://localhost/foodiie/public/sitemap.xml
+Sitemap: https://foodiie.in/sitemap.xml
