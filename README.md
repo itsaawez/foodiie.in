@@ -70,6 +70,28 @@ foodiie.in/
 └── .gitignore      # Git exclusion rules
 ```
 
+## 📸 Website Screenshots
+
+Explore the Foodiie.in interface, from the vibrant homepage to recipe discovery and interactive search.
+
+### 🏠 Homepage
+![Foodiie.in Homepage](screenshots/homepage.png)
+
+### 🍽️ Featured Food Content
+![Featured Food Content](screenshots/featured-content.png)
+
+### 👨‍🍳 Recipe Collection
+![Foodiie Recipe Grid](screenshots/recipes-grid.png)
+
+### ⚡ Food Shorts & Cuisine Discovery
+![Food Shorts and Cuisine Sections](screenshots/food-shorts-cuisine.png)
+
+### 📬 Newsletter & Footer
+![Foodiie Newsletter and Footer](screenshots/footer.png)
+
+### 🔎 Interactive Food Search
+![Foodiie Search Popup](screenshots/search-popup.png)
+
 ## 🎯 Project Goals
 
 - Build a recognizable food discovery brand.
